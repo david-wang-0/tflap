@@ -10,7 +10,7 @@ PlannerReversible::PlannerReversible(SASTask* task, Plan* initialPlan, TState* i
 	: Planner(task, initialPlan, initialState, forceAtEndConditions, filterRepeatedStates, generateTrace, tilActions, parentPlanner) {
 	this->initialPlan = initialPlan;
 	successors->evaluate(initialPlan);
-	if (tilActions != nullptr && tilActions->empty()) tilActions = nullptr;
+	if (tilActions != nullptr && tilActions->empty()) this->tilActions = tilActions = nullptr;
 	sel = new Selector();
 	if (successors->informativeLandmarks() || 1.5f * initialPlan->hLand >= initialPlan->h) {	// Landmarks available
 		if (tilActions != nullptr) {
