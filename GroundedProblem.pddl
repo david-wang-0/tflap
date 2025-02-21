@@ -1,0 +1,19 @@
+(define (problem elevators-prob2)
+(:domain elevators)
+(:objects
+  f0 - floor
+  f1 - floor
+  p0 - person
+  e0 - elevator
+)
+(:init
+  (elevator-on-floor e0 f1)
+  (stopped e0)
+  (person-on-floor p0 f0)
+)
+(:goal (and 
+  (person-on-floor p0 f1)
+  (person-on-floor p0 f0))
+)
+(:metric minimize total-time)
+)

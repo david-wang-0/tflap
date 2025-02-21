@@ -1,0 +1,1192 @@
+BASE PLAN
+0
+CHILDREN
+2
+CHILD 0
+1
+0.002: (move-elevator e0 f1 f0) [4.000]
+;Makespan: 4
+;Actions:  1
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
+CHILD 1
+2
+0.002: (move-elevator e0 f1 f1) [4.000]
+;Makespan: 4
+;Actions:  1
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f1
+  * 1 ---> 2
+BASE PLAN
+1
+CHILDREN
+3
+CHILD 0
+3
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+;Makespan: 8
+;Actions:  2
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
+CHILD 1
+4
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (move-elevator e0 f0 f0) [4.000]
+;Makespan: 8
+;Actions:  2
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: move-elevator e0 f0 f0
+  * 3 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
+CHILD 2
+5
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (move-elevator e0 f0 f1) [4.000]
+;Makespan: 8
+;Actions:  2
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: move-elevator e0 f0 f1
+  * 3 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
+BASE PLAN
+3
+CHILDREN
+3
+CHILD 0
+6
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+8.020: (leave-elevator p0 e0 f0) [4.000]
+;Makespan: 12
+;Actions:  3
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
++ [12.020000] Action: leave-elevator p0 e0 f0
+  * 5 ---> 6
+  * 3 ---> 6
+  * 3 ---> 6
+  * 5 -> 6
+  * 5 -> 7
+  * 2 -> 6
+  * 2 -> 7
+  * 3 -> 6
+  * 3 -> 7
+  * 4 -> 6
+  * 4 -> 7
+CHILD 1
+7
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+4.020: (move-elevator e0 f0 f0) [4.000]
+;Makespan: 8
+;Actions:  3
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
++ [8.020000] Action: move-elevator e0 f0 f0
+  * 3 ---> 6
+  * 3 -> 6
+  * 3 -> 7
+  * 2 -> 6
+  * 2 -> 7
+  * 4 -> 6
+  * 4 -> 7
+CHILD 2
+8
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+4.020: (move-elevator e0 f0 f1) [4.000]
+;Makespan: 8
+;Actions:  3
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
++ [8.020000] Action: move-elevator e0 f0 f1
+  * 3 ---> 6
+  * 3 -> 6
+  * 3 -> 7
+  * 2 -> 6
+  * 2 -> 7
+  * 4 -> 6
+  * 4 -> 7
+BASE PLAN
+6
+CHILDREN
+2
+CHILD 0
+9
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+8.020: (leave-elevator p0 e0 f0) [4.000]
+8.030: (move-elevator e0 f0 f0) [4.000]
+;Makespan: 12
+;Actions:  4
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
++ [12.020000] Action: leave-elevator p0 e0 f0
+  * 5 ---> 6
+  * 3 ---> 6
+  * 3 ---> 6
+  * 5 -> 6
+  * 5 -> 7
+  * 2 -> 6
+  * 2 -> 7
+  * 3 -> 6
+  * 3 -> 7
+  * 4 -> 6
+  * 4 -> 7
++ [12.030000] Action: move-elevator e0 f0 f0
+  * 3 ---> 8
+  * 3 -> 8
+  * 3 -> 9
+  * 2 -> 8
+  * 2 -> 9
+  * 6 -> 8
+  * 6 -> 9
+  * 4 -> 8
+  * 4 -> 9
+  * 5 -> 8
+  * 5 -> 9
+CHILD 1
+10
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+8.020: (leave-elevator p0 e0 f0) [4.000]
+8.030: (move-elevator e0 f0 f1) [4.000]
+;Makespan: 12
+;Actions:  4
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
++ [12.020000] Action: leave-elevator p0 e0 f0
+  * 5 ---> 6
+  * 3 ---> 6
+  * 3 ---> 6
+  * 5 -> 6
+  * 5 -> 7
+  * 2 -> 6
+  * 2 -> 7
+  * 3 -> 6
+  * 3 -> 7
+  * 4 -> 6
+  * 4 -> 7
++ [12.030000] Action: move-elevator e0 f0 f1
+  * 3 ---> 8
+  * 3 -> 8
+  * 3 -> 9
+  * 2 -> 8
+  * 2 -> 9
+  * 6 -> 8
+  * 6 -> 9
+  * 4 -> 8
+  * 4 -> 9
+  * 5 -> 8
+  * 5 -> 9
+BASE PLAN
+2
+CHILDREN
+0
+BASE PLAN
+7
+CHILDREN
+1
+CHILD 0
+11
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+4.020: (move-elevator e0 f0 f0) [4.000]
+8.030: (move-elevator e0 f0 f1) [4.000]
+;Makespan: 12
+;Actions:  4
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
++ [8.020000] Action: move-elevator e0 f0 f0
+  * 3 ---> 6
+  * 3 -> 6
+  * 3 -> 7
+  * 2 -> 6
+  * 2 -> 7
+  * 4 -> 6
+  * 4 -> 7
++ [12.030000] Action: move-elevator e0 f0 f1
+  * 7 ---> 8
+  * 7 -> 8
+  * 7 -> 9
+  * 2 -> 8
+  * 2 -> 9
+  * 3 -> 8
+  * 3 -> 9
+  * 4 -> 8
+  * 4 -> 9
+  * 6 -> 8
+  * 6 -> 9
+BASE PLAN
+5
+CHILDREN
+0
+BASE PLAN
+8
+CHILDREN
+3
+CHILD 0
+12
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+4.020: (move-elevator e0 f0 f1) [4.000]
+8.030: (move-elevator e0 f1 f0) [4.000]
+;Makespan: 12
+;Actions:  4
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
++ [8.020000] Action: move-elevator e0 f0 f1
+  * 3 ---> 6
+  * 3 -> 6
+  * 3 -> 7
+  * 2 -> 6
+  * 2 -> 7
+  * 4 -> 6
+  * 4 -> 7
++ [12.030000] Action: move-elevator e0 f1 f0
+  * 7 ---> 8
+  * 7 -> 8
+  * 7 -> 9
+  * 2 -> 8
+  * 2 -> 9
+  * 3 -> 8
+  * 3 -> 9
+  * 4 -> 8
+  * 4 -> 9
+  * 6 -> 8
+  * 6 -> 9
+CHILD 1
+13
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+4.020: (move-elevator e0 f0 f1) [4.000]
+8.030: (move-elevator e0 f1 f1) [4.000]
+;Makespan: 12
+;Actions:  4
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
++ [8.020000] Action: move-elevator e0 f0 f1
+  * 3 ---> 6
+  * 3 -> 6
+  * 3 -> 7
+  * 2 -> 6
+  * 2 -> 7
+  * 4 -> 6
+  * 4 -> 7
++ [12.030000] Action: move-elevator e0 f1 f1
+  * 7 ---> 8
+  * 7 -> 8
+  * 7 -> 9
+  * 2 -> 8
+  * 2 -> 9
+  * 3 -> 8
+  * 3 -> 9
+  * 4 -> 8
+  * 4 -> 9
+  * 6 -> 8
+  * 6 -> 9
+CHILD 2
+14
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+4.020: (move-elevator e0 f0 f1) [4.000]
+8.030: (leave-elevator p0 e0 f1) [4.000]
+;Makespan: 12
+;Actions:  4
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
++ [8.020000] Action: move-elevator e0 f0 f1
+  * 3 ---> 6
+  * 3 -> 6
+  * 3 -> 7
+  * 2 -> 6
+  * 2 -> 7
+  * 4 -> 6
+  * 4 -> 7
++ [12.030000] Action: leave-elevator p0 e0 f1
+  * 7 ---> 8
+  * 7 ---> 8
+  * 5 ---> 8
+  * 7 -> 8
+  * 7 -> 9
+  * 2 -> 8
+  * 2 -> 9
+  * 3 -> 8
+  * 3 -> 9
+  * 4 -> 8
+  * 4 -> 9
+  * 6 -> 8
+  * 6 -> 9
+  * 5 -> 8
+  * 5 -> 9
+BASE PLAN
+14
+CHILDREN
+3
+CHILD 0
+15
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+4.020: (move-elevator e0 f0 f1) [4.000]
+8.030: (leave-elevator p0 e0 f1) [4.000]
+12.040: (enter-elevator p0 e0 f1) [4.000]
+;Makespan: 16
+;Actions:  5
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
++ [8.020000] Action: move-elevator e0 f0 f1
+  * 3 ---> 6
+  * 3 -> 6
+  * 3 -> 7
+  * 2 -> 6
+  * 2 -> 7
+  * 4 -> 6
+  * 4 -> 7
++ [12.030000] Action: leave-elevator p0 e0 f1
+  * 7 ---> 8
+  * 7 ---> 8
+  * 5 ---> 8
+  * 7 -> 8
+  * 7 -> 9
+  * 2 -> 8
+  * 2 -> 9
+  * 3 -> 8
+  * 3 -> 9
+  * 4 -> 8
+  * 4 -> 9
+  * 6 -> 8
+  * 6 -> 9
+  * 5 -> 8
+  * 5 -> 9
++ [16.040001] Action: enter-elevator p0 e0 f1
+  * 9 ---> 10
+  * 7 ---> 10
+  * 7 ---> 10
+  * 9 -> 10
+  * 9 -> 11
+  * 2 -> 10
+  * 2 -> 11
+  * 3 -> 10
+  * 3 -> 11
+  * 4 -> 10
+  * 4 -> 11
+  * 5 -> 10
+  * 5 -> 11
+  * 6 -> 10
+  * 6 -> 11
+  * 7 -> 10
+  * 7 -> 11
+  * 8 -> 10
+  * 8 -> 11
+CHILD 1
+16
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+4.020: (move-elevator e0 f0 f1) [4.000]
+8.030: (leave-elevator p0 e0 f1) [4.000]
+8.040: (move-elevator e0 f1 f0) [4.000]
+;Makespan: 12
+;Actions:  5
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
++ [8.020000] Action: move-elevator e0 f0 f1
+  * 3 ---> 6
+  * 3 -> 6
+  * 3 -> 7
+  * 2 -> 6
+  * 2 -> 7
+  * 4 -> 6
+  * 4 -> 7
++ [12.030000] Action: leave-elevator p0 e0 f1
+  * 7 ---> 8
+  * 7 ---> 8
+  * 5 ---> 8
+  * 7 -> 8
+  * 7 -> 9
+  * 2 -> 8
+  * 2 -> 9
+  * 3 -> 8
+  * 3 -> 9
+  * 4 -> 8
+  * 4 -> 9
+  * 6 -> 8
+  * 6 -> 9
+  * 5 -> 8
+  * 5 -> 9
++ [12.040000] Action: move-elevator e0 f1 f0
+  * 7 ---> 10
+  * 7 -> 10
+  * 7 -> 11
+  * 2 -> 10
+  * 2 -> 11
+  * 3 -> 10
+  * 3 -> 11
+  * 4 -> 10
+  * 4 -> 11
+  * 6 -> 10
+  * 6 -> 11
+  * 8 -> 10
+  * 8 -> 11
+  * 5 -> 10
+  * 5 -> 11
+CHILD 2
+17
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+4.020: (move-elevator e0 f0 f1) [4.000]
+8.030: (leave-elevator p0 e0 f1) [4.000]
+8.040: (move-elevator e0 f1 f1) [4.000]
+;Makespan: 12
+;Actions:  5
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
++ [8.020000] Action: move-elevator e0 f0 f1
+  * 3 ---> 6
+  * 3 -> 6
+  * 3 -> 7
+  * 2 -> 6
+  * 2 -> 7
+  * 4 -> 6
+  * 4 -> 7
++ [12.030000] Action: leave-elevator p0 e0 f1
+  * 7 ---> 8
+  * 7 ---> 8
+  * 5 ---> 8
+  * 7 -> 8
+  * 7 -> 9
+  * 2 -> 8
+  * 2 -> 9
+  * 3 -> 8
+  * 3 -> 9
+  * 4 -> 8
+  * 4 -> 9
+  * 6 -> 8
+  * 6 -> 9
+  * 5 -> 8
+  * 5 -> 9
++ [12.040000] Action: move-elevator e0 f1 f1
+  * 7 ---> 10
+  * 7 -> 10
+  * 7 -> 11
+  * 2 -> 10
+  * 2 -> 11
+  * 3 -> 10
+  * 3 -> 11
+  * 4 -> 10
+  * 4 -> 11
+  * 6 -> 10
+  * 6 -> 11
+  * 8 -> 10
+  * 8 -> 11
+  * 5 -> 10
+  * 5 -> 11
+BASE PLAN
+4
+CHILDREN
+0
+BASE PLAN
+15
+CHILDREN
+2
+CHILD 0
+18
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+4.020: (move-elevator e0 f0 f1) [4.000]
+8.030: (leave-elevator p0 e0 f1) [4.000]
+12.040: (enter-elevator p0 e0 f1) [4.000]
+12.050: (move-elevator e0 f1 f0) [4.000]
+;Makespan: 16
+;Actions:  6
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
++ [8.020000] Action: move-elevator e0 f0 f1
+  * 3 ---> 6
+  * 3 -> 6
+  * 3 -> 7
+  * 2 -> 6
+  * 2 -> 7
+  * 4 -> 6
+  * 4 -> 7
++ [12.030000] Action: leave-elevator p0 e0 f1
+  * 7 ---> 8
+  * 7 ---> 8
+  * 5 ---> 8
+  * 7 -> 8
+  * 7 -> 9
+  * 2 -> 8
+  * 2 -> 9
+  * 3 -> 8
+  * 3 -> 9
+  * 4 -> 8
+  * 4 -> 9
+  * 6 -> 8
+  * 6 -> 9
+  * 5 -> 8
+  * 5 -> 9
++ [16.040001] Action: enter-elevator p0 e0 f1
+  * 9 ---> 10
+  * 7 ---> 10
+  * 7 ---> 10
+  * 9 -> 10
+  * 9 -> 11
+  * 2 -> 10
+  * 2 -> 11
+  * 3 -> 10
+  * 3 -> 11
+  * 4 -> 10
+  * 4 -> 11
+  * 5 -> 10
+  * 5 -> 11
+  * 6 -> 10
+  * 6 -> 11
+  * 7 -> 10
+  * 7 -> 11
+  * 8 -> 10
+  * 8 -> 11
++ [16.049999] Action: move-elevator e0 f1 f0
+  * 7 ---> 12
+  * 7 -> 12
+  * 7 -> 13
+  * 2 -> 12
+  * 2 -> 13
+  * 3 -> 12
+  * 3 -> 13
+  * 4 -> 12
+  * 4 -> 13
+  * 6 -> 12
+  * 6 -> 13
+  * 10 -> 12
+  * 10 -> 13
+  * 5 -> 12
+  * 5 -> 13
+  * 8 -> 12
+  * 8 -> 13
+  * 9 -> 12
+  * 9 -> 13
+CHILD 1
+19
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+4.020: (move-elevator e0 f0 f1) [4.000]
+8.030: (leave-elevator p0 e0 f1) [4.000]
+12.040: (enter-elevator p0 e0 f1) [4.000]
+12.050: (move-elevator e0 f1 f1) [4.000]
+;Makespan: 16
+;Actions:  6
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
++ [8.020000] Action: move-elevator e0 f0 f1
+  * 3 ---> 6
+  * 3 -> 6
+  * 3 -> 7
+  * 2 -> 6
+  * 2 -> 7
+  * 4 -> 6
+  * 4 -> 7
++ [12.030000] Action: leave-elevator p0 e0 f1
+  * 7 ---> 8
+  * 7 ---> 8
+  * 5 ---> 8
+  * 7 -> 8
+  * 7 -> 9
+  * 2 -> 8
+  * 2 -> 9
+  * 3 -> 8
+  * 3 -> 9
+  * 4 -> 8
+  * 4 -> 9
+  * 6 -> 8
+  * 6 -> 9
+  * 5 -> 8
+  * 5 -> 9
++ [16.040001] Action: enter-elevator p0 e0 f1
+  * 9 ---> 10
+  * 7 ---> 10
+  * 7 ---> 10
+  * 9 -> 10
+  * 9 -> 11
+  * 2 -> 10
+  * 2 -> 11
+  * 3 -> 10
+  * 3 -> 11
+  * 4 -> 10
+  * 4 -> 11
+  * 5 -> 10
+  * 5 -> 11
+  * 6 -> 10
+  * 6 -> 11
+  * 7 -> 10
+  * 7 -> 11
+  * 8 -> 10
+  * 8 -> 11
++ [16.049999] Action: move-elevator e0 f1 f1
+  * 7 ---> 12
+  * 7 -> 12
+  * 7 -> 13
+  * 2 -> 12
+  * 2 -> 13
+  * 3 -> 12
+  * 3 -> 13
+  * 4 -> 12
+  * 4 -> 13
+  * 6 -> 12
+  * 6 -> 13
+  * 10 -> 12
+  * 10 -> 13
+  * 5 -> 12
+  * 5 -> 13
+  * 8 -> 12
+  * 8 -> 13
+  * 9 -> 12
+  * 9 -> 13
+BASE PLAN
+9
+CHILDREN
+1
+CHILD 0
+20
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+8.020: (leave-elevator p0 e0 f0) [4.000]
+8.030: (move-elevator e0 f0 f0) [4.000]
+12.040: (move-elevator e0 f0 f1) [4.000]
+;Makespan: 16
+;Actions:  5
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
++ [12.020000] Action: leave-elevator p0 e0 f0
+  * 5 ---> 6
+  * 3 ---> 6
+  * 3 ---> 6
+  * 5 -> 6
+  * 5 -> 7
+  * 2 -> 6
+  * 2 -> 7
+  * 3 -> 6
+  * 3 -> 7
+  * 4 -> 6
+  * 4 -> 7
++ [12.030000] Action: move-elevator e0 f0 f0
+  * 3 ---> 8
+  * 3 -> 8
+  * 3 -> 9
+  * 2 -> 8
+  * 2 -> 9
+  * 6 -> 8
+  * 6 -> 9
+  * 4 -> 8
+  * 4 -> 9
+  * 5 -> 8
+  * 5 -> 9
++ [16.040001] Action: move-elevator e0 f0 f1
+  * 9 ---> 10
+  * 9 -> 10
+  * 9 -> 11
+  * 2 -> 10
+  * 2 -> 11
+  * 3 -> 10
+  * 3 -> 11
+  * 4 -> 10
+  * 4 -> 11
+  * 5 -> 10
+  * 5 -> 11
+  * 6 -> 10
+  * 6 -> 11
+  * 8 -> 10
+  * 8 -> 11
+BASE PLAN
+16
+CHILDREN
+2
+CHILD 0
+21
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+4.020: (move-elevator e0 f0 f1) [4.000]
+8.030: (leave-elevator p0 e0 f1) [4.000]
+8.040: (move-elevator e0 f1 f0) [4.000]
+12.050: (move-elevator e0 f0 f0) [4.000]
+;Makespan: 16
+;Actions:  6
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
++ [8.020000] Action: move-elevator e0 f0 f1
+  * 3 ---> 6
+  * 3 -> 6
+  * 3 -> 7
+  * 2 -> 6
+  * 2 -> 7
+  * 4 -> 6
+  * 4 -> 7
++ [12.030000] Action: leave-elevator p0 e0 f1
+  * 7 ---> 8
+  * 7 ---> 8
+  * 5 ---> 8
+  * 7 -> 8
+  * 7 -> 9
+  * 2 -> 8
+  * 2 -> 9
+  * 3 -> 8
+  * 3 -> 9
+  * 4 -> 8
+  * 4 -> 9
+  * 6 -> 8
+  * 6 -> 9
+  * 5 -> 8
+  * 5 -> 9
++ [12.040000] Action: move-elevator e0 f1 f0
+  * 7 ---> 10
+  * 7 -> 10
+  * 7 -> 11
+  * 2 -> 10
+  * 2 -> 11
+  * 3 -> 10
+  * 3 -> 11
+  * 4 -> 10
+  * 4 -> 11
+  * 6 -> 10
+  * 6 -> 11
+  * 8 -> 10
+  * 8 -> 11
+  * 5 -> 10
+  * 5 -> 11
++ [16.049999] Action: move-elevator e0 f0 f0
+  * 11 ---> 12
+  * 11 -> 12
+  * 11 -> 13
+  * 2 -> 12
+  * 2 -> 13
+  * 3 -> 12
+  * 3 -> 13
+  * 4 -> 12
+  * 4 -> 13
+  * 5 -> 12
+  * 5 -> 13
+  * 6 -> 12
+  * 6 -> 13
+  * 7 -> 12
+  * 7 -> 13
+  * 8 -> 12
+  * 8 -> 13
+  * 10 -> 12
+  * 10 -> 13
+CHILD 1
+22
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+4.020: (move-elevator e0 f0 f1) [4.000]
+8.030: (leave-elevator p0 e0 f1) [4.000]
+8.040: (move-elevator e0 f1 f0) [4.000]
+12.050: (move-elevator e0 f0 f1) [4.000]
+;Makespan: 16
+;Actions:  6
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
++ [8.020000] Action: move-elevator e0 f0 f1
+  * 3 ---> 6
+  * 3 -> 6
+  * 3 -> 7
+  * 2 -> 6
+  * 2 -> 7
+  * 4 -> 6
+  * 4 -> 7
++ [12.030000] Action: leave-elevator p0 e0 f1
+  * 7 ---> 8
+  * 7 ---> 8
+  * 5 ---> 8
+  * 7 -> 8
+  * 7 -> 9
+  * 2 -> 8
+  * 2 -> 9
+  * 3 -> 8
+  * 3 -> 9
+  * 4 -> 8
+  * 4 -> 9
+  * 6 -> 8
+  * 6 -> 9
+  * 5 -> 8
+  * 5 -> 9
++ [12.040000] Action: move-elevator e0 f1 f0
+  * 7 ---> 10
+  * 7 -> 10
+  * 7 -> 11
+  * 2 -> 10
+  * 2 -> 11
+  * 3 -> 10
+  * 3 -> 11
+  * 4 -> 10
+  * 4 -> 11
+  * 6 -> 10
+  * 6 -> 11
+  * 8 -> 10
+  * 8 -> 11
+  * 5 -> 10
+  * 5 -> 11
++ [16.049999] Action: move-elevator e0 f0 f1
+  * 11 ---> 12
+  * 11 -> 12
+  * 11 -> 13
+  * 2 -> 12
+  * 2 -> 13
+  * 3 -> 12
+  * 3 -> 13
+  * 4 -> 12
+  * 4 -> 13
+  * 5 -> 12
+  * 5 -> 13
+  * 6 -> 12
+  * 6 -> 13
+  * 7 -> 12
+  * 7 -> 13
+  * 8 -> 12
+  * 8 -> 13
+  * 10 -> 12
+  * 10 -> 13
+BASE PLAN
+10
+CHILDREN
+0
+BASE PLAN
+17
+CHILDREN
+0
+BASE PLAN
+12
+CHILDREN
+0
+BASE PLAN
+18
+CHILDREN
+0
+BASE PLAN
+11
+CHILDREN
+0
+BASE PLAN
+21
+CHILDREN
+1
+CHILD 0
+23
+0.002: (move-elevator e0 f1 f0) [4.000]
+4.010: (enter-elevator p0 e0 f0) [4.000]
+4.020: (move-elevator e0 f0 f1) [4.000]
+8.030: (leave-elevator p0 e0 f1) [4.000]
+8.040: (move-elevator e0 f1 f0) [4.000]
+12.050: (move-elevator e0 f0 f0) [4.000]
+16.060: (move-elevator e0 f0 f1) [4.000]
+;Makespan: 20
+;Actions:  7
+;H: 3
++ [0.000000] Action: #initial
++ [4.002000] Action: move-elevator e0 f1 f0
+  * 1 ---> 2
++ [8.010000] Action: enter-elevator p0 e0 f0
+  * 3 ---> 4
+  * 3 ---> 4
+  * 1 ---> 4
+  * 3 -> 4
+  * 3 -> 5
+  * 2 -> 4
+  * 2 -> 5
++ [8.020000] Action: move-elevator e0 f0 f1
+  * 3 ---> 6
+  * 3 -> 6
+  * 3 -> 7
+  * 2 -> 6
+  * 2 -> 7
+  * 4 -> 6
+  * 4 -> 7
++ [12.030000] Action: leave-elevator p0 e0 f1
+  * 7 ---> 8
+  * 7 ---> 8
+  * 5 ---> 8
+  * 7 -> 8
+  * 7 -> 9
+  * 2 -> 8
+  * 2 -> 9
+  * 3 -> 8
+  * 3 -> 9
+  * 4 -> 8
+  * 4 -> 9
+  * 6 -> 8
+  * 6 -> 9
+  * 5 -> 8
+  * 5 -> 9
++ [12.040000] Action: move-elevator e0 f1 f0
+  * 7 ---> 10
+  * 7 -> 10
+  * 7 -> 11
+  * 2 -> 10
+  * 2 -> 11
+  * 3 -> 10
+  * 3 -> 11
+  * 4 -> 10
+  * 4 -> 11
+  * 6 -> 10
+  * 6 -> 11
+  * 8 -> 10
+  * 8 -> 11
+  * 5 -> 10
+  * 5 -> 11
++ [16.049999] Action: move-elevator e0 f0 f0
+  * 11 ---> 12
+  * 11 -> 12
+  * 11 -> 13
+  * 2 -> 12
+  * 2 -> 13
+  * 3 -> 12
+  * 3 -> 13
+  * 4 -> 12
+  * 4 -> 13
+  * 5 -> 12
+  * 5 -> 13
+  * 6 -> 12
+  * 6 -> 13
+  * 7 -> 12
+  * 7 -> 13
+  * 8 -> 12
+  * 8 -> 13
+  * 10 -> 12
+  * 10 -> 13
++ [20.059999] Action: move-elevator e0 f0 f1
+  * 13 ---> 14
+  * 13 -> 14
+  * 13 -> 15
+  * 2 -> 14
+  * 2 -> 15
+  * 3 -> 14
+  * 3 -> 15
+  * 4 -> 14
+  * 4 -> 15
+  * 5 -> 14
+  * 5 -> 15
+  * 6 -> 14
+  * 6 -> 15
+  * 7 -> 14
+  * 7 -> 15
+  * 8 -> 14
+  * 8 -> 15
+  * 10 -> 14
+  * 10 -> 15
+  * 11 -> 14
+  * 11 -> 15
+  * 12 -> 14
+  * 12 -> 15
+BASE PLAN
+13
+CHILDREN
+0
+BASE PLAN
+22
+CHILDREN
+0
+BASE PLAN
+20
+CHILDREN
+0
+BASE PLAN
+19
+CHILDREN
+0
+BASE PLAN
+23
+CHILDREN
+0

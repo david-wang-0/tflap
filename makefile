@@ -1,7 +1,7 @@
 CC = g++
 # Final version: remove -g and replace -O0 by -O3
-CFLAGS = -c -Wall -std=c++11 -O3
-LFLAGS = -Wall -std=c++11 -O3
+CFLAGS = -c -Wall -std=c++11 -g -O0
+LFLAGS = -Wall -std=c++11 -g -O0
 OBJS = tflap.o parser.o syntaxAnalyzer.o parsedTask.o preprocess.o preprocessedTask.o grounder.o groundedTask.o sasTranslator.o mutexGraph.o sasTask.o state.o plan.o linearizer.o planner.o selector.o evaluator.o successors.o hFF.o landmarks.o hLand.o temporalRPG.o costRPG.o DTG.o causalGraph.o memoization.o plateau.o plannerConcurrent.o plannerDeadEnds.o plannerReversible.o plannerSetting.o
 
 all: $(OBJS)
